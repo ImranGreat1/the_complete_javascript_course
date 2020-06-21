@@ -1,4 +1,4 @@
-/* Functions is a one of the basic essential principles of javascript
+/* Functions is one of the basic essential principles of javascript
 It's a way to organise codes that we want to reuse again and again or 
 just organisation purpose.
 */
