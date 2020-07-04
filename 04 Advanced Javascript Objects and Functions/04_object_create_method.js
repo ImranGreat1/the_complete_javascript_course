@@ -39,7 +39,7 @@ john.calculateAge();
     
     Fortunately Object.create method takes in the object we want to create
     as the second argument. But the object we pass in will be slightly
-    different from how we define object.
+    different from how we will normally do.
 
     The values of the properties of the object we pass as second argument
     to the Object.create method must also be an object, this object will
@@ -67,7 +67,7 @@ console.log(john.__proto__ === personProto);
     from a prototype, but still the function constructor is the most
     used pattern to create object that inherit from a prototype.
 
-    The Object.create though is more flexible that the function constructor
+    The Object.create though is more flexible than the function constructor
     pattern and can be use to create complex structures because it allows us
     to choose the object we want as prototype for different objects.
 
@@ -75,10 +75,14 @@ console.log(john.__proto__ === personProto);
 
 // Difference between Object.create method and function constructors
 /* 
+    // OBJECT.CREATE METHOD
     Objects created using the Object.create method inherit directly
-    from the object that is passed to the Object.create method as the
-    first argument.
+    from the object that is passed as the first argument to the
+    Object.create method.
+
     WHILE
+
+  FUNCTION CONSTRUCTORS
     Objects created using function constructors inherit methods and
     properties from the prototype property of the constructor.
 */

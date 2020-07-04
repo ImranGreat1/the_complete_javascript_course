@@ -28,19 +28,19 @@ Person.prototype.isAdmin = false;
     In the console objects prototype are represented by __proto__
     1. john.__proto__ === Person.prototype
 
-    2. inspect the john.__proto__ and Person.prototype, where you'll 
-    find also the prototype propety of the Object function constructor.
+    2. Inspect the john.__proto__ and Person.prototype, you'll 
+    find also the prototype property of the Object function constructor.
     Like we said earlier every object created is an instance of the Object
     object which is the Object function constructor
 
-    3. Within Person.prototype, you'll also find another prototype,
-    which is the prototype of the Object function constructor.
+    3. Within Person function constructor, you'll also find another prototype,
+    which is the prototype property of the Object function constructor.
 */
 // console.log(john.__proto__ === Person.prototype);
 
 /*
 Because of the prototype chain we can use the methods provied by the 
-prototype property of the Object function contructor with our john object
+prototype property of the Object function contructor within our john object
 */
 
 // hasOwnProperty
@@ -68,7 +68,7 @@ var nums = [1, 2, "hello"];
     some of the methods provided to us in the prototype property
     of the Array function constructor e.g push, pop, shift and unshift
     methods provided to all instances of the Array.
-    The Array is als an instance of the Object object as every object
+    The Array is also an instance of the Object object as every object
     in Javascript
 */
 

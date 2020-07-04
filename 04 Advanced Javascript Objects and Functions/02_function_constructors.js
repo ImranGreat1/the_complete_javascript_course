@@ -27,7 +27,7 @@ var john = {
 // Function constructor (The Person blueprint)
 /* 
     It is a convention to use uppercase to write the first letter
-    of the constructor name when writing a function constructor
+    of the function constructor name.
 */
 var Person = function (name, yearOfBirth, job) {
   this.name = name;
@@ -47,15 +47,15 @@ var mike = new Person("Mike Phil", 1994, "Football Coach");
     we INSTANCIATE a new object because any object created with that
     constructor will be an instance of the constructor that created it.
 
-    2.  Normally when we call regular function, the "this" keyword of that
-    function will point to the global object. But pointing every object we
-    instanciate to the global object will make no sense. The "new" keyword
-    comes to the rescue and prevent our function constructor from pointing
-    to the global object.
+    2.  Normally when we call a regular function, the "this" keyword of that
+    function will point to the global object. But pointing every "this" keyword
+    to the global object will make no sense. The "new" keyword comes to the
+    rescue and prevent our function constructor from pointing to the global
+    object.
 
     // The "new" keyword
 
-    3. When we first call the constructor function with the "new" keyword,
+    3. When we first call the function constructor with the "new" keyword,
     here is what happen:
     (i) The "new" keyword create a NEW EMPTY object
     
@@ -70,11 +70,11 @@ var mike = new Person("Mike Phil", 1994, "Football Coach");
     so setting properties or methods on the "this" keyword will point to our new
     empty object.
 
-    3. If nothing is set to return from the constructor function then the return
+    3. If nothing is set to return from the function constructor then the return
     value will be the new object that was created.
 
-    4. The value will then be assigned to the variable that call the constructor
-    function.
+    4. The object will then be assigned to the variable that call the function
+    constructor.
 
 */
 
